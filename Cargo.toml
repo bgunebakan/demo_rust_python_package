@@ -1,0 +1,11 @@
+[package]
+name = "demo_rust_python_package"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "demo_rust_python_package"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.22", features = ["extension-module"] }
